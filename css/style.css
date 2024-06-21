@@ -1,0 +1,210 @@
+/* google-fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: o;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
+    scroll-padding-top: 2rem;
+    font-family: var(--poppins-font-family);
+}
+:root{
+    /* fonts */
+    --poppins-font-family: "poppins",sans-serif;
+    /* color */
+    --body-color: #171b44;
+    --body-alter-color: #ff4d55;
+    --main-color: #ff4d55;
+    --hover-color: #f8646c;
+    --container-color: #1d2352;
+    --textt-alter-color: #0bd2d4;
+    --text-color:#fbfeff;
+}
+
+/* basic styles */
+::selection{
+    background: var(--main-color);
+    color:var(--text-color)
+}
+
+section {
+    padding: 4rem 0 3rem;
+}
+
+img {
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+body{
+    color: var(--text-color);
+    background: var(--body-color);
+}
+/* header */
+header{
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    background-color: rgba(79, 95, 5, 0);
+    z-index: 200;
+}
+.nav{
+    max-width: 1200px;
+    margin: auto;
+    width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+    gap: 90px;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    color: var(--text-color);
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: 0.3s all linear;
+}
+.logo span{
+    color: var(--main-color);
+}
+.logo:hover{
+    transform: scale(1.1);
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    column-gap: 1.2rem;
+}
+.nav-link{
+    position: relative;
+    font-size: 1rem;
+    color: var(--text-color);
+    font-weight: 500;
+}
+
+.nav-link::after{
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: -4px;
+    width: 0%;
+    height: 3px;
+    background: var(--main-color);
+}
+.nav-link:hover::after{
+    width: 100%;
+    transition: 0.4s all linear;
+}
+
+.login-btn{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 2px;
+    color: var(--text-color);
+    background-color: var(--main-color);
+    font-weight: 500;
+    padding: 8px 15px;
+    cursor: pointer;
+
+}
+.login-btn bx{
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+.login-btn:hover{
+    background: var(--hover-color);
+    transition: 0.3s all linear;
+}
+
+/* drop-login */
+.drop-login{
+    position: absolute;
+    top: 115%;
+    right: 0%;
+    width: 231px;
+    height: auto;
+    background: var(--container-color);
+    box-shadow: 4px 4px 10px 2px rgb(23 27 38 / 60%);
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+}
+
+.drop-login .drop-items {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 15px;
+}
+.drop-login .drop-items:hover {
+    background:rgba(15, 124, 197, 0.737);
+    transition: 0.3s all linear;
+}
+.drop-login .drop-items a{
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--text-color);
+}
+.drop-login .drop-items span{
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: var(--text-color);
+}
+
+.drop-login.drop-login-open{
+   clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+   transition: 0.4s all linear;
+}
+
+.menu-icon{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 5px;
+    cursor: pointer;
+    z-index: 200;
+    transition: 0.3s;
+}
+
+.menu-icon div{
+    display: block;
+    background-color: var(--text-color);
+    height: 2px;
+    width: 25px;
+    transition: 0.3s;
+}
+
+.move .line1 {
+    transform: rotate(-45deg) translate(-5px,5px);
+}
+
+.move .line2 {
+    opacity: 0;
+}
+
+.move .line3 {
+    transform: rotate(45deg) translate(-5px,-5px);
+}
+
+
+
+
+
+
+
