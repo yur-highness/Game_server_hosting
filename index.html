@@ -1,129 +1,462 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MVP Host</title>
     <!-- link to css -->
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style.css" />
     <!-- link to box-icons -->
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
     <!--link to fav-icon -->
-    <link rel="shortcut icon" href="./img/fav-icon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./img/fav-icon.png" type="image/x-icon" />
     <!-- Link Swiper's CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
     <!-- Header -->
     <header>
-        <div class="nav">
-            <!-- logo -->
-             <a href="index.html" class="logo">MVP<span>Host</span></a>
-            <!-- nav links -->
-             <div class="navbar">
-             <li><a href="#home" class="nav-link">Home</a></li>
-             <li><a href="#services" class="nav-link">Services</a></li>
-             <li><a href="#game" class="nav-link">Game hosting</a></li>
-             <li><a href="#" class="nav-link">Games</a></li>
-             <li><a href="prices.html" class="nav-link">Prices</a></li>
-            </div>
-            <!-- login buttons -->
-             <div class="login-btn">
-                <span>Login</span>
-                <i class='bx bx-chevron-down'></i>
-                <div class="drop-login">
-                    <div class="drop-items">
-                        <a href="#">Client Area</a>
-                        <span>Billing and Support</span>
-                    </div>
-                    <div class="drop-items">
-                        <a href="#">Game panel</a>
-                        <span>Game Server Management</span>
-                    </div>
-
-
-                </div>
-            
-             </div>
-             <div class="menu-icon">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
-             </div>
+      <div class="nav">
+        <!-- logo -->
+        <a href="index.html" class="logo">MVP<span>Host</span></a>
+        <!-- nav links -->
+        <div class="navbar">
+          <li><a href="#home" class="nav-link">Home</a></li>
+          <li><a href="#services" class="nav-link">Services</a></li>
+          <li><a href="#game" class="nav-link">Hosting</a></li>
+          <li><a href="#" class="nav-link">Games</a></li>
+          <li><a href="prices.html" class="nav-link">Prices</a></li>
         </div>
+        <!-- login buttons -->
+        <div class="login-btn">
+          <span>Login</span>
+          <i class="bx bx-chevron-down"></i>
+          <div class="drop-login">
+            <div class="drop-items">
+              <a href="#">Client Area</a>
+              <span>Billing and Support</span>
+            </div>
+            <div class="drop-items">
+              <a href="#">Game panel</a>
+              <span>Game Server Management</span>
+            </div>
+          </div>
+        </div>
+        <div class="menu-icon">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+      </div>
     </header>
 
     <!-- home -->
 
     <section class="home swiper" id="home">
-       <div class="swiper-wrapper">
-             <!-- slide 1 -->
-              <div class="swiper-slide">
-                <div class="home-slide">
-                  <img src="img/home_1.jpg" alt="" class="slide-img" />
-                  <div class="home-overlay"></div>
-                    <div class="home-text container">
-                      <h1 class="slide-title">Assassin-Creed <span>hosting</span></h1>
-                      <p class="slide-description">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia quidem hic qui. Iure et pariatur consectetur nobis quisquam!
-                      </p>
-                      <a href="#" class="btn">View Plans</a>
-                    </div>
-                 </div>
-              </div>
-             
-              
-              <!-- slide 2 -->
-              <div class="swiper-slide">
-                <div class="home-slide">
-                 <img src="img/home_2.jpg" alt="" class="slide-img" />
-                   <div class="home-overlay"></div>
-                    <div class="home-text container">
-                      <h1 class="slide-title">BUY NOW <span>hosting</span></h1>
-                      <p class="slide-description">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia quidem hic qui. Iure et pariatur consectetur nobis quisquam!
-                      </p>
-                      <a href="#" class="btn">View Plans</a>
-                    </div>
-                </div>
-             </div>
-                
-              <!-- slide 3 -->
-              <div class="swiper-slide">
-                <div class="home-slide">
-                 <img src="img/home_3.jpg" alt="" class="slide-img" />
-                   <div class="home-overlay"></div>
-                    <div class="home-text container">
-                      <h1 class="slide-title">CALL OF DUTY <span>hosting</span></h1>
-                      <p class="slide-description">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia quidem hic qui. Iure et pariatur consectetur nobis quisquam!
-                      </p>
-                      <a href="#" class="btn">View Plans</a>
-                    </div>
-                </div>
-              </div>
-              <!-- slide 4 -->
-              <div class="swiper-slide">
-                <div class="home-slide">
-                 <img src="img/home_4.jpg" alt="" class="slide-img" />
-                   <div class="home-overlay"></div>
-                    <div class="home-text container">
-                      <h1 class="slide-title">Black OPS <span>hosting</span></h1>
-                      <p class="slide-description">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia quidem hic qui. Iure et pariatur consectetur nobis quisquam!
-                      </p>
-                      <a href="#" class="btn">View Plans</a>
-                    </div>
-                </div>
+      <div class="swiper-wrapper">
+        <!-- slide 1 -->
+        <div class="swiper-slide">
+          <div class="home-slide">
+            <img src="img/home_1.jpg" alt="" class="slide-img" />
+            <div class="home-overlay"></div>
+            <div class="home-text container">
+              <h1 class="slide-title">Assassin-Creed <span>hosting</span></h1>
+              <p class="slide-description">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Mollitia quidem hic qui. Iure et pariatur consectetur nobis
+                quisquam!
+              </p>
+              <a href="#" class="btn">View Plans</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- slide 2 -->
+        <div class="swiper-slide">
+          <div class="home-slide">
+            <img src="img/home_2.jpg" alt="" class="slide-img" />
+            <div class="home-overlay"></div>
+            <div class="home-text container">
+              <h1 class="slide-title">BUY NOW <span>hosting</span></h1>
+              <p class="slide-description">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Mollitia quidem hic qui. Iure et pariatur consectetur nobis
+                quisquam!
+              </p>
+              <a href="#" class="btn">View Plans</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- slide 3 -->
+        <div class="swiper-slide">
+          <div class="home-slide">
+            <img src="img/home_3.jpg" alt="" class="slide-img" />
+            <div class="home-overlay"></div>
+            <div class="home-text container">
+              <h1 class="slide-title">CALL OF DUTY <span>hosting</span></h1>
+              <p class="slide-description">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Mollitia quidem hic qui. Iure et pariatur consectetur nobis
+                quisquam!
+              </p>
+              <a href="#" class="btn">View Plans</a>
+            </div>
+          </div>
+        </div>
+        <!-- slide 4 -->
+        <div class="swiper-slide">
+          <div class="home-slide">
+            <img src="img/home_4.jpg" alt="" class="slide-img" />
+            <div class="home-overlay"></div>
+            <div class="home-text container">
+              <h1 class="slide-title">Black OPS <span>hosting</span></h1>
+              <p class="slide-description">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Mollitia quidem hic qui. Iure et pariatur consectetur nobis
+                quisquam!
+              </p>
+              <a href="#" class="btn">View Plans</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="swiper-pagination"></div>
+    </section>
+    <!-- services -->
+    <section class="services container" id="services">
+      <h2 class="heading">Our Services</h2>
+      <div class="services-content">
+        <!-- box1 -->
+        <div class="ser-box">
+          <i class="bx bx-cloud-drizzle"></i>
+          <h2 class="ser-box-title">99.9% UPTIME GUARANTEE</h2>
+          <p class="ser-box-content">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore rem
+            voluptatem est odit perferendis quo
+          </p>
+        </div>
+        <!-- box2 -->
+        <div class="ser-box">
+          <i class="bx bx-shield-quarter"></i>
+          <h2 class="ser-box-title">GUARD PROTECTION</h2>
+          <p class="ser-box-content">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore rem
+            voluptatem est odit perferendis quo
+          </p>
+        </div>
+        <!-- box3 -->
+        <div class="ser-box">
+          <i class="bx bx-joystick-alt"></i>
+          <h2 class="ser-box-title">DEDICATED GAME SERVER</h2>
+          <p class="ser-box-content">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore rem
+            voluptatem est odit perferendis quo
+          </p>
+        </div>
+        <!-- box4 -->
+        <div class="ser-box">
+          <i class="bx bx-support"></i>
+          <h2 class="ser-box-title">24/7/365 SUPPORT</h2>
+          <p class="ser-box-content">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore rem
+            voluptatem est odit perferendis quo
+          </p>
+        </div>
+        <!-- box5 -->
+        <div class="ser-box">
+          <i class="bx bx-timer"></i>
+          <h2 class="ser-box-title">QUICK DEPLOYMENT</h2>
+          <p class="ser-box-content">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore rem
+            voluptatem est odit perferendis quo
+          </p>
+        </div>
+        <!-- box6 -->
+        <div class="ser-box">
+          <i class="bx bx-server"></i>
+          <h2 class="ser-box-title">FAST STORAGE</h2>
+          <p class="ser-box-content">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore rem
+            voluptatem est odit perferendis quo
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- games -->
+    <section class="games container" id="Games">
+      <!-- heading -->
+      <h2 class="heading">Choose from our popular <br />Game servers</h2>
+
+      <!-- games-content -->
+      <div class="games-content">
+        <!-- box1 -->
+        <div class="game-box">
+          <img src="img/game-01.jpeg" alt="" class="game-box-img" />
+          <div class="game-text">
+            <h2 class="game-box-title">Valorant</h2>
+            <h3 class="game-price">starting at <span>$5.99</span></h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Reprehenderit.
+            </p>
+            <a href="#" class="game-btn">Get Started</a>
+          </div>
+        </div>
+        <!-- box2 -->
+        <div class="game-box">
+          <img src="img/3wTuR4.jpg" alt="" class="game-box-img" />
+          <div class="game-text">
+            <h2 class="game-box-title">Elite</h2>
+            <h3 class="game-price">starting at <span>$5.99</span></h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Reprehenderit.
+            </p>
+            <a href="#" class="game-btn">Get Started</a>
+          </div>
+        </div>
+        <!-- box3 -->
+        <div class="game-box">
+          <img src="img/game-4.jpg" alt="" class="game-box-img" />
+          <div class="game-text">
+            <h2 class="game-box-title">WreckFest</h2>
+            <h3 class="game-price">starting at <span>$5.99</span></h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Reprehenderit.
+            </p>
+            <a href="#" class="game-btn">Get Started</a>
+          </div>
+        </div>
+        <!-- box4 -->
+        <div class="game-box">
+          <img src="img/pubg-.jpg" alt="" class="game-box-img" />
+          <div class="game-text">
+            <h2 class="game-box-title">PUBG</h2>
+            <h3 class="game-price">starting at <span>$5.99</span></h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Reprehenderit.
+            </p>
+            <a href="#" class="game-btn">Get Started</a>
+          </div>
+        </div>
+        <!-- box5 -->
+        <div class="game-box">
+          <img
+            src="img/Call-of-Duty-Modern-Warfare.jpg"
+            alt=""
+            class="game-box-img"
+          />
+          <div class="game-text">
+            <h2 class="game-box-title">COD MW</h2>
+            <h3 class="game-price">starting at <span>$5.99</span></h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Reprehenderit.
+            </p>
+            <a href="#" class="game-btn">Get Started</a>
+          </div>
+        </div>
+        <!-- box6 -->
+        <div class="game-box">
+          <img src="img/dota-2.jpg" alt="" class="game-box-img" />
+          <div class="game-text">
+            <h2 class="game-box-title">DOTA 2</h2>
+            <h3 class="game-price">starting at <span>$5.99</span></h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Reprehenderit.
+            </p>
+            <a href="#" class="game-btn">Get Started</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- faq -->
+    <section class="faq container" id="faq">
+      <div class="faq-text">
+        <h2 class="faq-title">F.A.Q</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus.
+          lorem9Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          Possimus. lorem9
+        </p>
+        <a href="#faq-acc" class="btn">See All F.A.q</a>
+      </div>
+      <div class="faq-image">
+        <img src="img/Premium Photo _ Cyberpunk gaming controller gamepad joystick illustration.jpg" alt="F.A.Q" />
+      </div>
+    </section>
+
+    <!-- accordion -->
+    <section class="faq-accordion container" id="faq-acc">
+      <!-- Accordion Container -->
+      <div class="accordion-container">
+        <!-- accordion1 -->
+         <div class="accordion-item">
+          <div class="accordion-header">
+            <h2 class="accordion-title">Which gamemodes can I install?</h2>
+            <i class='bx bx-plus accordion-icon'></i>
+          </div>
+         
+         <div class="accordion-content">
+          <p class="accordion-answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde illum adipisci fuga delectus, quasi quis!</p>
+         </div>
+        </div>
+         <!-- accordion2 -->
+         <div class="accordion-item">
+          <div class="accordion-header">
+            <h2 class="accordion-title">Am I able to change the default map?</h2>
+            <i class='bx bx-plus accordion-icon'></i>
+          </div>
+        
+         <div class="accordion-content">
+          <p class="accordion-answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde illum adipisci fuga delectus, quasi quis!</p>
+         </div>
+        </div>
+         <!-- accordion3 -->
+         <div class="accordion-item">
+          <div class="accordion-header">
+            <h2 class="accordion-title">latest version of PUBG Available?</h2>
+            <i class='bx bx-plus accordion-icon'></i>
+          </div>
+       
+         <div class="accordion-content">
+          <p class="accordion-answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde illum adipisci fuga delectus, quasi quis!</p>
+         </div>
+        </div>
+         <!-- accordion4 -->
+         <div class="accordion-item">
+          <div class="accordion-header">
+            <h2 class="accordion-title">Gamemode for Call of Duty MW3?</h2>
+            <i class='bx bx-plus accordion-icon'></i>
+          </div>
+         
+         <div class="accordion-content">
+          <p class="accordion-answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde illum adipisci fuga delectus, quasi quis!</p>
+         </div>
+        </div>
+      </div>
+      <div class="accordion-text">
+        <h2>FREQUENTLY ASKED </br> QUESTIONS</h2>
+        <p>If you have a question, we've got the answer!</p>
+        <a href="#" class="btn">Have Question?</a>
+      </div>
+    </section>
+  
+  
+    <!-- control-panel   -->
+   <section class="control" id="control">
+    <!-- control-content   -->
+     <div class="control-container container">
+      <div class="control-text">
+        <h2 class="control-title">CONTROL PANEL</h2>
+        <p>A panel thats fast and efficient while still look amazing</p>
+        <div class="control-spec">
+          <div class="spec-box">
+            <i class='bx bx-check-circle color'></i>
+            <span>Manage all your Game servers</span>
+          </div>
+          <div class="spec-box">
+            <i class='bx bx-check-circle color'></i>
+            <span>Pre Made Installer</span>
+          </div>
+          <div class="spec-box">
+            <i class='bx bx-check-circle color'></i>
+            <span>Fast Responsive panel</span>
+          </div>
+        </div>
+      </div>
+    
+     <!-- control-image  -->
+      <div class="control-image swiper">
+        <div class="swiper-wrapper">
+          <!-- slide1 -->
+          <div class="swiper-slide">
+            <div class="control-img-box">
+              <img src="img/30b18dc2-99e6-4f81-aff8-63beef9d04a5.jpg" alt="" class="control-img" >
+            </div>
+          </div>
+            <!-- slide2 -->
+            <div class="swiper-slide">
+              <div class="control-img-box">
+                <img src="img//Animated HUD.jpg" alt="" class="control-img">
               </div>
             </div>
-                
-              <div class="swiper-pagination"></div>
-           
-    </section>
-      <!-- Swiper JS -->
+            <!-- slide3 -->
+            <div class="swiper-slide">
+              <div class="control-img-box">
+                <img src="img/Interaction Design Reel.jpg" alt="" class="control-img">
+              </div>
+            </div>
+          
+        </div>
+   
+        <div class="swiper-pagination"></div>
+        </div>
+   </section>
+
+   <!-- footer  -->
+    <div class="footer container">
+      <div class="footer-box">
+        <a href="index.html" class="footer-logo">MVP<span>HOST</span></a>
+        <div class="social">
+          <a href="#"><i class='bx-fw bx bxl-facebook color bx-burst-hover color'></i></a>
+          <a href="#"><i class='bx-fw bx bxl-twitter color bx-tada color' ></i></a>
+          <a href="#"><i class='bx-fw bx bxl-instagram color bx-burst-hover color' ></i></a>
+          <a href="#"><i class='bx-fw bx bxl-discord-alt color bx-burst-hover color'></i></a>
+        </div>
+      </div>
+        <div class="footer-box">
+          <h2 class="footer-title">Server Hosting</h2>
+          <a href="#" class="footer-link">COD Hosting</a>
+          <a href="#" class="footer-link">Assasins Creed Hosting</a>
+          <a href="#" class="footer-link">PUBG Hosting</a>
+          <a href="#" class="footer-link">Valorant Hosting</a>
+        </div>
+        <div class="footer-box">
+          <h2 class="footer-title">COMPANY</h2>
+          <a href="#" class="footer-link">About us</a>
+          <a href="#" class="footer-link">Contact us</a>
+          <a href="#" class="footer-link">Terms of Service</a>
+          <a href="#" class="footer-link">Privacy Policy</a>
+        </div>
+        <div class="footer-box">
+          <h2 class="footer-title">SUPPORT</h2>
+          <a href="#" class="footer-link">Submit a Ticket</a>
+          <a href="#" class="footer-link">Online Chat</a>
+          <a href="#" class="footer-link">Service Status</a>
+          
+        </div>
+     </div>
+    
+
+    <!-- copyright &copy; 2022 All rights reserved -->
+     <div class="copyright container">
+      <p>&copy; 2022 MVP Host. All Rights Reserved</p>
+
+      <div class="payments">
+        <i class='bx bxl-visa'></i>
+        <i class='bx bxl-mastercard' ></i>
+        <i class='bx bxl-paypal' ></i>
+      </div>
+     </div>
+
+
+    <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <!-- scripts link -->
     <script src="./js/main.js"></script>
-</body>
+  </body>
 </html>
